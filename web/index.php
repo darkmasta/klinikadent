@@ -23,7 +23,7 @@ $app->get('/', function() use($app) {
 });
 
 $app->get('/klinika', function() use($app) {
-  return $app['twig']->render('index.php');
+  return $app['twig']->render('index.twig');
 });
 
 $app->run();
