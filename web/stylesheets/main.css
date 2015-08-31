@@ -1,36 +1,1295 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px;
+body {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
 }
-.jumbotron .btn-primary {
-  background: #845ac7;
-  border-color: #845ac7;
+
+p {
+  line-height: 1.5;
 }
-.jumbotron .btn-primary:hover {
-  background: #7646c1;
-}
-.jumbotron p {
-  color: #d9ccee;
-  max-width: 75%;
-  margin: 1em auto 2em;
-}
-.jumbotron h1 {
-  font-size: 40px;
-}
-.navbar + .jumbotron {
-  margin-top: -20px;
-}
-.jumbotron .lang-logo {
-  display: block;
-  background: #B01302;
-  border-radius: 50%;
+
+header {
+  max-width: 1000px;
   overflow: hidden;
-  width: 100px;
+  margin: 0 auto;
+}
+
+.mobileMenuIcon {
+	display:none;
+	float:right;
+	margin:24px 20px 55px 0;
+	cursor:pointer;
+}
+
+.mobileMenuIcon span {
+	width:32px;
+	height:3px;
+	background:#ccc;
+	display:block;
+	margin:4px 0;
+} 
+
+header #logo {
+  margin: -10px 51px 0 0;
+  float: left;
+  position: relative;
+  z-index: 5;
+}
+
+header #search {
+  background: #598F41 url("../img/icon_search.png") no-repeat center center;
+}
+
+header #lang {
+  background-color: #68A444;
+}
+
+.buttons {
+  float: right;
+}
+
+.button {
+  background-color: green;
+  width: 40px;
+  height: 50px;
+  margin-left: 8px;
+  float: left;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+}
+
+header #search-button {
+}
+
+.nav-tab {
+  float: left;
+  list-style-type: none;
+  margin-left: 25px;
+  padding-bottom: 15px;
+  font-size: 17px;
+}
+
+.nav-tab a {
+  text-decoration: none;
+  color: grey;
+}
+
+.nav-tab:hover {
+  border-bottom: 6px solid #8CC34E;
+}
+
+nav {
+  margin-top: 55px;
+  float: left;
+}
+
+.banner-slider {
+  margin-top: -73px;
+  overflow: hidden;
+}
+
+.slide {
+  overflow-x: hidden;
+	overflow-y: hidden;
+	opacity: 0;
+  position: relative;
+	width: 100%;
+	height: auto;
+	max-height: 470px;
+	float: left;
+	margin-right: -100%; 
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide.start {
+  opacity: 1;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.banner-slider .info-box {
+  background-color: rgba(255,255,255, 0.5);
+  border: 2px solid #fff;
+  border-radius: 4px;
+  position: absolute;
+  width: 260px;
+  top: 210px;
+  right: 240px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.green {
+ color: #8AC44B;
+}
+
+.banner-slider .info-box h2 {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: left;
+  margin: 15px 10px 10px 10px;
+  color: grey;
+}
+
+.banner-slider .info-box p {
+  font-size: 14px;
+  margin: 15px 10px 10px 10px;
+  color: grey;
+}
+
+.banner-slider .info-box button {
+  background-color: #F2F1ED;
+  border: 0 solid grey;
+  padding: 10px;
+  margin: 15px 10px 20px 10px;
+  cursor: pointer;
+}
+
+.banner-slider .info-box button:hover {
+  background-color: green;
+  color: white;
+}
+
+.slider-button {
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 3px solid #ccc;
+}
+
+.slider-button:hover {
+  border: 3px solid green;
+}
+
+.slider-button.active {
+  border: 3px solid green;
+}
+
+.slider-button.start {
+  border: 3px solid green;
+} 
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto; 
+}
+
+.features {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.feature-box {
+  float:  left;
+  width:  32%;
+  margin: 0;
+}
+
+.feature-box:first-child {
+	margin-right:2%;
+}
+
+.feature-box:last-child {
+	margin-left:2%;
+}
+
+.feature-box .feature-icon {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.feature-box #randevu {
+  background: #588E40 url("../img/icon_randevu_al.png") 
+  no-repeat center center; 
+}
+
+.feature-box #hizmet {
+  background: #588E40 url("../img/icon_hizmetlerimiz.png") 
+  no-repeat center center; 
+} 
+
+.feature-box #sube {
+  background: #588E40 url("../img/subelerimiz.png") 
+  no-repeat center center; 
+} 
+
+.feature-box .feature-header {
+  background: #68A442; 
+  width: 180px;
+  height: 80px;
+}
+
+.feature-box h2 {
+  font-weight: normal;
+  background: #68A442; 
+  height: 80px;
+  color: white;
+  margin: 0;
+  line-height: 80px;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.feature-box p {
+  font-size: 12px;
+  border-top: 1px solid rgb(161, 155, 155);
+  padding-top: 10px;
+  font-weight: 200;
+  text-align: justify;
+  color: grey;
+}
+
+.feature-box button {
+  background-color: #83B44B;
+  color: white; 
+  border: 0px solid;
+  padding: 5px 10px;
+}
+
+.content-slider {
+  margin-top: 100px;
+  position: relative;
+}
+
+.content-slider img {
+  width: 100%;
+}
+
+.slider-info  {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 325px;
+}
+
+.slider-info p, h2 {
+  text-align: right;
+  color: grey;
+}
+
+.slider-info h2 {
+  font-weight: normal; 
+  color: #8AC44B;
+}
+
+.slider-info button {
+  float: right;
+  background-color: #F2F1ED;
+  border: 0 solid grey;
+  padding: 10px;
+  margin: 15px 10px 20px 10px;
+  cursor: pointer; 
+  color: grey;
+}
+
+.slider-info button:hover {
+  background-color: green;
+  color: white;
+}
+
+.slider-info .next-slide {
+  float: right;
+  width: 24px;
+  height: 50px;
+  margin-top: 85px;
+  background-color: #E7E7E7;
+  margin-right: 5px;
+}
+
+.slider-info .next-slide:hover {
+  background-color: #A8C37C;
+  cursor: pointer;
+}
+
+.slider-info .next-slide p {
+  text-align: center;
+  line-height: 25px;
+  color: white;
+}
+
+.slider-info .next-slide-buttons {
+  margin-right: -78px;
+  float: right;
+}
+
+.services {
+  margin-top: 75px;  
+  overflow: hidden;
+}
+
+.services .service-box {
+  width:  48%;
+  float: left;
+  margin: 2% 0 2% 0;
+}
+
+.services .service-box:first-child {
+	margin-right:4%;
+}
+
+.services .service-box:last-child {
+  margin-left: 4%;
+}
+
+.service-box .inner p {
+  padding-right: 10px;
+}
+
+.services .service-box .inner {
+  border: 3px solid rgba(204, 204, 204, 0.6);
+}
+
+.service-box .service-icon {
+  width: 110px;
+  height: 110px;
+  margin: 1.7%;
+  float: left;
+}
+
+.service-box .inner h3 {
+  color: #8AC44B;
+}
+
+.service-box #tercih {
+  background: url("../img/icon_camera.png") 
+  no-repeat center center;
+}
+
+.service-box #e-randevu {
+  background: url("../img/icon_randevu_al_02.png") 
+  no-repeat center center;
+} 
+
+.service-box #whatsup {
+  background: url("../img/icon_whatsapp.png") 
+  no-repeat center center;
+} 
+
+.service-box #iletisim {
+  background: url("../img/icon_mail.png") 
+  no-repeat center center;
+} 
+
+.service-box .inner p {
+  font-size: 13px;
+  text-align: justify;
+  color: grey;
+}
+
+.gallery {
+  margin-top: 75px;
+  overflow: hidden;
+}
+
+.gallery .image-box {
+  float:  left;
+  width:  32%;
+}
+
+.gallery .image-box a img {
+  width: 100%;
+}
+
+.gallery .image-box:first-child {
+  margin-right: 2%;
+}
+
+.gallery .image-box:last-child {
+  margin-left: 2%;
+}
+
+
+.gallery .image-box h2 {
+  background-color: #E6E7E9;
+  margin-top: -5px;
+  padding: 10px 5%;
+  text-align: left;
+  font-weight: normal;
+  font-size: 18px;
+  color: #8AC44B;;
+  width: 90%;
+}
+
+.gallery .image-box p {
+  font-size: 14px;
+  margin-left: 8px;
+  color: grey;
+}
+
+.footer {
+  overflow: hidden;
+  margin: 75px auto 0 auto;
+  width: 100%;
+  background-color: #588E40;
+  height: 200px;
+}
+
+.footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer ul {
+  margin: 25px auto 10px auto;
+  text-align: center;
+  color: white;
+  list-style-type: none;
+}
+
+.footer .social-buttons {
+  margin: 10px auto;
+  text-align:center;
+}
+
+.footer .social-buttons a {
+	display:inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.footer .social-buttons #facebook {
+  background: url("../img/icon_facebook.png") 
+  no-repeat center center;  
+}
+
+.footer .social-buttons #twitter {
+  background: url("../img/icon_twitter.png") 
+  no-repeat center center;
+}
+
+.footer .social-buttons #youtube {
+  background: url("../img/icon_youtube.png") 
+  no-repeat center center;
+}
+
+.footer p {
+  text-align: center;
+  color: white;
+  margin: 5px;
+  padding 5px;
+}
+
+/* HIZMETLERIMIZ */
+
+.main-header {
+  text-align: center;
+  margin: 50px auto 90px auto;
+  color: grey;
+  font-weight: normal;
+}
+
+.content #hizmet-banner {
+  width: 100%;
+}
+
+.content .sidepane {
+  width: 31%;
+  float: left;
+  margin-right: 3%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.content .main-content {
+  width: 66%;
+  float: left;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  overflow:hidden;
+}
+
+.content .hizmet-content-container {
+	display:none;
+}
+
+.content .hizmet-content-container:first-child {
+	display:block;
+}
+
+.content .main-content h2 {
+  color: #497544;
+}
+
+.sidepane ul {
+  list-style-type: none;
+  border: 2px solid #ccc;
+  background-color: #F4F8F9;
+  padding: 10px 10px;
+}
+
+.sidepane ul li {
+  text-align: left;
+  color: grey;
+  margin: 0 20px;
+  padding: 10px 5px;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+}
+
+.sidepane ul li:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.main-content h2 {
+  text-align: left;
+  margin-top: 0px;
+  font-weight: normal;
+  border-bottom: 1px solid green;
+  padding-bottom: 17px;
+  width:100%;
+}
+
+.main-content p {
+  color: grey;
+  font-size: 14px;
+}
+
+.text-wrapper {
+  overflow: hidden;
+}
+
+
+/* KURUMSAL */
+
+.content img {
+  width: 100%;
+}
+
+.content .kurumsal-header {
+  color: #497544;
+  margin: 50px 0px;
+  width: 30%;
+  border-bottom: 1px solid green;
+  padding-bottom: 20px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.content .two-column {
+  -webkit-columns: 2 450px;
+  -moz-columns: 2 450px;
+  columns: 2 450px;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+}
+
+.content .kurumsal-p {
+  color: grey;
+  margin: 0px 0px;
+  text-align: justify;
+}
+
+
+/* ONLINE RANDEVU */
+
+.content .form-content {
+  width: 62%;
+  margin-right: 10%;
+  float: left;
+}
+
+.content .contact-content {
+  width: 280px;
+  float: left;
+  top: 5%;
+  right: 12%;
+}
+
+.content .form-content h2 {
+  color: #497544;
+  border-bottom: 1px solid green;
+  padding-bottom: 15px;
+  width: 45%;
+  text-align: left;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.form-content .input-area label {
+  display: block;
+  margin-bottom: 10px;
+  color: #497544;
+}
+
+
+.form-content .input-area input {
+  width: 100%;
+  height: 30px;
+}
+
+.form-content .input-area {
+  width: 47%;
+  margin-bottom: 30px;
+  float: left;
+}
+
+.form-content  #first{
+  margin-right: 4%;    
+}
+
+.form-content .input-area:last-child {
+  margin-left: 4%;    
+} 
+
+.form-content .personal-information-form {
+  overflow: hidden;
+}
+
+.form-content label {
+  display: block;
+  margin-bottom: 10px;
+  color: #497544;
+  font-size: 14px;
+} 
+
+.form-content textarea {
+  width: 98%;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.form-content select {
+  height: 40px;
+  width: 99%;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.form-content .date-form-area {
+  width: 47%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  float: left;
+  margin-right: 3%;
+}
+
+
+.form-content .date-form-area select {
+  width: 31%;
+  margin-right: 1%;
+  float: left;
+  text-indent: 10px;
+  height: 40px;
+}
+
+.form-content button {
+  color: white;
+  border: 0 solid grey;
+  margin-top: 35px;
+  padding: 15px 35px;
+  background-color: #588E40;
+  margin-bottom: 130px;
+}
+
+.contact-content h2 {
+  width: 100%;
+  padding: 5px 0;
+  color: white;
+  background-color: #588E40;
+  text-align: center;
+  font-weight: normal;
+}
+
+.contact-content .contact-box {
+  width: 100%;
+  height: 120px;
+  margin: 20px 0;
+  float:left;
+  border: 5px solid #F4F4F4;
+}
+
+
+.contact-content .contact-box .contact-logo {
+  width: 20%;
+  margin-left: 10px;
+  height: 100%;
+  float: left;
+}
+
+.contact-content .contact-box #whatsapp-icon {
+  background: url("../img/icon_whatsapp.png") 
+  no-repeat center center;  
+  background-size: 50px;
+}
+
+.contact-content .contact-box #phone-icon {
+  background: url("../img/icon_phone.png") 
+  no-repeat center center;  
+  background-size: 50px;
+} 
+
+.contact-content .contact-box #email-icon {
+  background: url("../img/icon_mail.png") 
+  no-repeat center center;  
+  background-size: 50px;
+} 
+
+.contact-content .contact-box .contact-info {
+  width: 72%;
+  margin-left: 3%;
+  height: 100%;
+  float: left;
+}
+
+.contact-content .contact-box .contact-info #whatsapp-number {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  background-color: none;
+}
+
+.contact-content .contact-box .contact-info #contact-email {
+  font-size: 18px;
+  margin: 23px 0;
+  color: #4DA10B;
+}
+
+.contact-content .contact-box .contact-info .contact-phone {
+  color: #4DA10B;
+}
+
+.contact-content .contact-box .contact-info p {
+  font-size: 13px;
+}
+
+.contact-content .contact-box .contact-info h3 {
+  margin: 10px 0 8px 0;  
+  text-align: left;
+  font-size: 16px;
+  font-weight: normal;
+  color: #4DA10B;
+}
+
+/* BIZE KATILIN */
+
+.personal-information-form label {
+  margin-bottom: 10px;
+}
+
+.personal-information-form select {
+  margin-bottom: 30px;
+}
+
+#hidden-upload {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+} 
+
+#cv-button {
+  background-color: white;  
+  color: grey;
+  border: 1px solid #ccc;
+  margin-top: 15px;
+}
+
+#submit-job {
+ float: right;
+ width: 48%;
+ margin-top: 100px;
+}
+
+
+/* DOKTORLAR */
+
+.doctor-box {
+  width: 23%;
+  height: 330px;
+  margin-right: 2.6%;
+  margin-bottom: 20px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  cursor:pointer;
+}
+
+
+.doctor-box:nth-child(4n) {
+	margin-right: 0;
+}
+
+.doctor-box img {
+  width: 100%;
+}
+
+.doctor-box .doctor-name {
+  position: absolute;
+  background-color: #4B7543;
+  top: 264px;
+  width: 100%;
+  height: 20%;
+  transition: all 0.3s linear;
+}
+
+
+.doctor-box .doctor-name p {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  margin: 10px auto;
+}
+
+.doctor-box .doctor-information {
+  background-color: #F2F2F2; 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 81%;
+  display: none;
+  overflow: auto;
+}
+
+.doctor-box .doctor-information p {
+  font-size: 12px;
+  color: grey;
+  text-align: left;
+  padding: 5px 20px;
+}
+
+.doctor-box .doctor-information .circle-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 3px solid #ccc;   
+  display: inline-block;
+}
+
+.doctor-box .doctor-information .circle-button:hover {
+  border: 3px solid #8CC34E;
+}
+
+
+
+.doctor-box .doctor-information .circle-buttons {
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* ILETISIM */
+
+.map {
+  width: 100%;
+  height: 500px;
+  background-color: #def;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.iletisim-header {
+  color: #497544;
+  border-bottom: 2px solid #497544;
+  padding-bottom: 20px;
+  width: 35%;
+  font-weight: normal;
+}
+
+.iletisim-info {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.iletisim-info .iletisim-info-box {
+  width: 32%;
   height: 100px;
-  margin: auto;
-  border: 2px solid white;
+  float: left;
+  margin-bottom: 100px;
 }
-.jumbotron .lang-logo img {
-  max-width: 100%;
+
+.iletisim-info .iletisim-info-box:first-child {
+  margin-right: 2%;
 }
+
+.iletisim-info .iletisim-info-box:last-child {
+  margin-left: 2%;
+}  
+
+.iletisim-info .iletisim-info-box img {
+  width: 10px;
+  height: 15px;
+  margin: 10px auto;
+  display: block;
+}
+
+.iletisim-info .iletisim-info-box h3 {
+   color: #497544;
+   text-align: center;
+   font-weight: normal;
+   font-size: 14px;
+   letter-spacing: 0.1em;
+}
+
+
+.iletisim-info .iletisim-info-box p {
+  color: grey;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media screen
+and (max-width:1100px) {
+
+  header #logo {
+    margin: -30px 0 0 0;
+  }
+
+  .nav-tab {
+    padding-right:  1.2%;
+  }
+
+  header #logo img {
+    width: 75%;
+    height: 75%;
+  }
+
+  nav {
+    margin-top: 40px;
+    float: none;
+  }
+
+  .nav-tab {
+    font-size: 14px;
+    padding-bottom: 3px;
+    margin-right: 8px;
+    margin-left: 0px;
+  }
+
+  .nav-tab:last-child {
+    margin-right: -10px;
+  }
+
+  .banner-slider .info-box {
+    zoom: 0.8;
+    top: 110px;
+  }
+
+  .slider-info .next-slide-buttons {
+    display: none;
+  }
+
+  .iletisim-header {
+    margin-left: 30px;
+  }
+  
+}     
+
+@media screen
+and (max-width:1050px) {
+  .content {
+    margin: 0 5%;
+  }
+
+  .doctor-box .doctor-name {
+    top: 245px;
+  } 
+}  
+
+
+@media screen
+and (max-width:840px) {
+  .nav-tab {
+    padding: %1;
+  }
+
+  .doctor-box .doctor-name {
+    top: 215px;
+  }
+
+  .banner-slider .info-box {
+    display: none;
+  }
+
+  .header {
+    margin-right: 5%;
+    margin-left: 5%
+  }
+} 
+
+@media screen
+and (max-width:730px) {
+
+  header {
+    padding: 0 10px;
+  }
+
+  header nav {
+    display: none;
+  }  
+
+  header .buttons {
+    display: none;
+  }
+
+  .mobileMenuIcon {
+    display: block;
+  }
+
+  header #logo  {
+    width: 35%;
+  }
+
+  .content {
+    margin-top: 50px;
+  }
+
+  .banner-slider .info-box {
+    display: none;
+  }
+
+  .features .feature-box:first-child {
+    margin: 20px auto;
+  }
+  .features .feature-box:last-child {
+    margin: 20px auto;
+  }
+
+  .services .service-box:first-child {
+    margin: 20px auto;
+  }
+  
+  .services .service-box:last-child {
+    margin: 20px auto;
+  } 
+
+  .feature-box {
+    display: block;
+    float: none;
+    width: 60%;
+    margin: 20px auto;
+  }
+
+  
+
+  .content-slider .slider-info {
+    top: 0px;
+  }
+
+  .content-slider .slider-info button {
+    display: none;
+  }
+
+  .content-slider .slider-info .next-slide-buttons {
+    display: none;
+  }
+
+  .services .service-box {
+    width: 94%;
+    margin: 2% 3% 2% 3%;
+    float: none;
+  }
+
+  .gallery .image-box:first-child {
+    margin: 10px auto 50px auto;
+  }
+
+  .gallery .image-box:last-child {
+    margin: 10px auto -10px auto;
+  }
+
+  .gallery .image-box {
+    margin: 10px auto 50px auto;
+    float: none;
+    width: 65%;
+  }
+
+
+  /* Kurumsal */
+
+  .content .kurumsal-wrapper {
+    margin: 7%;
+  }
+
+  /* Doktorlar */
+
+  .doctor-box {
+    width: 33%;
+    margin: 8%;
+  }
+
+  .doctor-box .doctor-name {
+    top: 240px;
+  }
+
+  .doctor-box .doctor-information {
+    overflow: auto;
+  }
+
+  /* Iletisim */
+  .iletisim-header {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    width: 90%;
+  }
+
+  .iletisim-info .iletisim-info-box:last-child {
+    margin: 0;
+  }
+
+  .iletisim-info .iletisim-info-box:first-child {
+    margin: 0;
+  }
+
+  .iletisim-info .iletisim-info-box {
+    float: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+   
+  /* Online Randevu */
+  .content .form-content {
+    width: 90%;
+    margin: 5%;
+    float: none;
+    overflow: hidden;
+  }
+
+  .content .contact-content {
+    width: 90%;  
+    margin: 5%;
+    float: none;
+  }
+
+  .form-content select {
+    padding: 2px;
+  }
+
+  .contact-content .content-box {
+    width: 90%;
+    margin: 5%;
+    float: none;
+  }
+
+  /* Bize Katilin */
+
+  #submit-job {
+    width: 87%;
+    margin: -80px 5% 90px 5%;
+  }
+
+  .mobileMenu {
+    top: 40px;
+  }
+
+  .content .sidepane {
+    float: none;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .sidepane ul li {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .content .main-content {
+    float: none;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    overflow: hidden;
+  }
+  
+
+
+  
+}
+
+
+
+@media screen
+and (max-width:570px) {
+
+  .doctor-box .doctor-name {
+    top: 190px;
+  }
+
+  .doctor-box .doctor-information {
+    height: 60%;
+    overflow: auto;
+  }
+
+  .mobileMenu {
+    top: 45px;
+  }
+  
+}    
+
+
+@media screen
+and (max-width:460px) {
+
+  .doctor-box {
+    width: 60%;
+    margin: 5% auto;
+    float: none;
+  }
+  .doctor-box .doctor-name {
+    top: 265px;
+  }
+
+  .doctor-box .doctor-information {
+    height: 77%;
+    overflow: auto;
+  }
+
+  .mobileMenu {
+    top: 45px;
+  }
+  
+}  
+
+.clear {
+  clear: both;
+}
+
+.mobileMenu {
+	position: fixed;
+	top: 48px;
+	right: 0;
+	z-index: 5000;
+	background: #fff;
+	background: rgba(255,255,255,0.98);
+	width: 100%;
+	box-shadow: 0 6px 6px rgba(0,0,0,0.2);
+	display:none;
+}
+
+.mobileMenu li:first-child {
+}
+
+.mobileMenu li {
+	width:90%;
+	padding:20px 2%;
+	border-bottom:1px solid #eee;
+	text-align:right;
+}    
