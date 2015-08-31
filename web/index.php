@@ -22,4 +22,8 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
+$app->get('/klinika', function() use($app) {
+  return $app['twig']->render('klinika.twig');
+});
+
 $app->run();
